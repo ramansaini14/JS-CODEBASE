@@ -148,7 +148,6 @@
 
 
 
-    // let a = [1,2,3,4,5,6];
     // console.log(a.flat());
     // a = (a.map(val =>{
     //     return val+1;
@@ -161,21 +160,65 @@
     //         return true;
     //     }
     //     else{
-    //         return false;
-    //     }
+        //         return false;
+        //     }
     // })
     // console.log(a.filter(greatThanFour));
-
+    
     // const useRefuserAb = ((total, next) => {
-    //     return total + next;
-    // })
-    // console.log(a.reduce(useRefuserAb));
+        //     return total + next;
+        // })
+        // console.log(a.reduce(useRefuserAb));
+        
+        
+        // let a = [1,2,3,4,5,6];
+        // let arr = [4,5,a[0],a[1],a[2],a[3],a[4],a[5]];
+        // let arr = [4,5,...a];
+        // console.log(arr);
+
+        // const addition =(a,b,c) => {
+        //     return a+b+c;
+        // }
+        // let arr = [1,2,3];
+        // console.log(addition(...arr));
+        // let arr1 = [...arr];
+        // console.log(arr1);
+
+        // let arr = [1,2,3,4];
+        // let first = arr[0];
+        // console.log(first);           2016
+
+        // let arr = [1,2,3,4];
+        // let first = arr.slice(1);
+        // console.log(first);           2019 
+
+        // let [first, second, ...rest] = [...arr];
+        // console.log(first);
+        // console.log(second);
+        // console.log(rest);           // 2024
+
+        // `${}`
+        
+        const func = (...arr) => {
+            let sum = arr.reduce((total, next) => {
+                return total+next;
+            })
+            console.log(sum);
+        }
+        func(1,2,3,4,5,6);
+
+        // [[1,2],[3,4,8], [5,6],[7,8]]
+        // REDUSE AND FORMULATE EXPONENTIOAL VALUES OF PARTICULAR SUBARRAYS
+        // flat 
+        // FILTER AND PRINT UPTO 20 VAL 
 
 
+        
+
+    
 
 
-
-
+    
 
 // array -> 2 elements nikalne hai and one element push krna hai aur wo ek string hona chiye and 2 elements front se push krne hai 2 element and ek element pop krna hai jo existing hoga aur middle elemnt ko change krna hai with "abc"
 
